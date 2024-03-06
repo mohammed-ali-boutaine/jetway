@@ -1,0 +1,46 @@
+
+CRAETE DATABASE site;
+
+
+CREATE TABLE signup (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  fullname VARCHAR(255),
+  birthday DATE,
+  email VARCHAR(255),
+  password VARCHAR(255),
+  inscriptionDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+INSERT INTO signup (fullname, birthday, email, password)
+VALUES ('Mohammed  salah', '2004-02-22', 'mohammedsalah@gmail.com', 'abcabc123456'),
+       ('ahmed taha', '2003-11-12', 'ahmedt@gmail.com', 'aaaaaa123456') 
+       ('aya bnani', '2003-12-02', 'ayabenani@gmail.com', 'bbbcccaaaccc')
+       ('sanae salmi', '2005-01-11', 'sanaesalmi@gmail.com', 'sanae123456')
+;
+
+CREATE TABLE feedback (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100),
+    email VARCHAR(255),
+    message TEXT,
+    feedbackDate DATE DEFAULT CURRENT_DATE
+);
+
+INSERT INTO feedback (name, email, message) VALUES
+('John Doe', 'johndoe@example.com', 'Life is either a daring adventure or nothing.'),
+('Jane Smith', 'janesmith@example.com', 'The greatest glory in living lies not in never falling, but in rising every time we fall.'),
+('Robert Johnson', 'robertjohnson@example.com', 'The only way to do great work is to love what you do.'),
+('Emily Davis', 'emilydavis@example.com', "Believe you can and you're halfway there."),
+('Michael Wilson', 'michaelwilson@example.com', 'The future belongs to those who believe in the beauty of their dreams.');
+
+
+
+
+
+
+
+
+
+
+
+
